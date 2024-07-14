@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://ahmedhabiby.github.io/gym_images/images/OIP.jpeg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.introduction {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro-text {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px;
+    color: blue;
+}
+
+.intro-text p {
+    color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ahmed {
+    color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+.intro-image {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    min-width: 300px;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1200px) {
+    .gallery-item {
+        flex: 1 1 calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 100%;
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.exercise {
+    background-color: #f4f4f4;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 2rem);
+    box-sizing: border-box;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.exercise h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.exercise p {
+    font-size: 1rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .exercise {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .exercise {
+        width: calc(100% - 2rem);
+    }
+}
+
+.social-media {
+    font-size: 1.7em;
+    color: white;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.social-media a {
+    padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+    .intro-text p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-text p {
+        font-size: 0.8rem;
+    }
+}
